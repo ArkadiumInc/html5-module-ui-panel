@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        var w = window.innerWidth * window.devicePixelRatio;
+        var h = window.innerHeight * window.devicePixelRatio;
+        var lScale = Math.floor(10 / window.devicePixelRatio) / 10;
+        if(w===undefined || w===null || h===undefined || h===null || lScale===undefined || lScale===null ){
+            lScale = 1;
+        }
+        document.write('<meta name="viewport" content="initial-scale=' + lScale + ' user-scalable=no,minimal-ui=1">');
+    </script>
+    <!--<meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui" />-->
+
+    <!-- For mobile browser debugging @ jsconsole.com -->
+    <!-- Type in... :listen 2787B4E8-EA6A-4176-912A-F644BDAF7118 -->
+    <!-- <script src="http://jsconsole.com/remote.js?2787B4E8-EA6A-4176-912A-F644BDAF7118"></script> -->
+    <title>game-template</title>
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- /build -->
+</head>
+
+<body>
+<img src="assets/preloader.gif" id="game_preloader" class="gif-preloader">
+<div id="swiffycontainer" class="visible"></div>
+<div id="game-template" class="game"></div>
+
+<script src="js/libs/jquery-1.8.2.min.js"></script>
+<script src="js/libs/runtime-swiffy-v5.0.js"></script>
+<script src="js/libs/phaser.js"></script>
+<script src="js/libs/webUtils.js"></script>
+<!--<script src="js/libs/cocoon.js"></script>-->
+<script src="js/libs/Analytics.SDK.Javascript.js"></script>
+<script src="js/libs/JSGameAdapt.js"></script>
+<script src="js/libs/phaserExtensions.js"></script>
+<script src="js/libs/arena-api-1.2.2.js"></script>
+<script src="js/libs/TextWrapper.js"></script>
+<!-- build:js main.min.js -->
+<script src="js/main.js"></script>
+<!-- /build -->
+
+</body>
+</html>
+
+<!-- rendercode
+
+<script type='text/javascript'>
+    ark.setViewportMeta = function(){};
+    ark_jQuery(document).ready(function() {ads.addListener(ads.arkGameStartEvent, CustomGameStart);});
+    function CustomGameStart(args) {
+        var p={gameProtocolParams : initParams,iframeId : 'customGameIframe'};
+        if(arkPage.arena.device == 'pc'){
+                if (arkPage.arena.path.indexOf('/api/games/')>=0){p.height=480;p.width=640;}else{p.height = 480;p.width = 640;}
+                p.hideNavBar=false;}
+        var gUrl='http://testing.arkadium.com/gameexamples/webgl-game-template/';
+        p.appendAdditionalParamsToUrl = new Object();
+        p.appendAdditionalParamsToUrl.remotePuzzleURL = "http://cdn.games.arkadiumhosted.com/washingtonpost/CrosSynergy/";
+        p.appendAdditionalParamsToUrl.remotePuzzlePrefix = "cs";
+        p.appendAdditionalParamsToUrl.remotePuzzlePostfix = ".jpz";
+        p.appendAdditionalParamsToUrl.ActiveCalendarDaysBeforeToday = "30";
+
+
+    ark_renderGame(gUrl,'gameBlock',p);}
+</script>
+
+<script type='text/javascript' src='http://cdn.arenaconnect.arkadiumhosted.com/games-storage/html5-common-lib/js/ark-render-game-3.2.js'></script>
+-->

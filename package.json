@@ -1,0 +1,25 @@
+{
+  "name": "arkadium-panelmanager-test",
+  "version": "0.0.1",
+  "description": "Realization of Panel Manager functionality",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArkadiumInc/html5-module-panelmanager.git"
+  },
+  "keywords": [
+    "panel",
+    "ui",
+    "paneltransition"
+  ],
+  "author": "Arkadium Inc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArkadiumInc/html5-module-panelmanager/issues"
+  },
+  "homepage": "https://github.com/ArkadiumInc/html5-module-panelmanager#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "jasmine-node": "^1.14.5"
+  }
+}

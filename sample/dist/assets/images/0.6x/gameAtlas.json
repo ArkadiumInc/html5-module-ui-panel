@@ -1,0 +1,36 @@
+{"frames": [
+
+{
+	"filename": "Gotham-Light.png",
+	"frame": {"x":2,"y":2,"w":114,"h":303},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":114,"h":303},
+	"sourceSize": {"w":116,"h":305}
+},
+{
+	"filename": "Gotham-Medium.png",
+	"frame": {"x":118,"y":2,"w":298,"h":305},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":298,"h":305},
+	"sourceSize": {"w":300,"h":307}
+},
+{
+	"filename": "dummyImage.png",
+	"frame": {"x":418,"y":2,"w":1,"h":1},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+	"sourceSize": {"w":1,"h":1}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "gameAtlas.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":512},
+	"scale": "0.6",
+	"smartupdate": "$TexturePacker:SmartUpdate:5a5d96e3da79c8c2e0bd045d0602c822:8fa654119b5ca180e109e1fc01a087d1:e896188c05c76156764a9a795589d688$"
+}
+}

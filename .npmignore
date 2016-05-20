@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+*.db
+node_modules/
+bower_components/
+gulpfile.js
+/dist
