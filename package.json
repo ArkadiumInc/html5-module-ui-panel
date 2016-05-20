@@ -1,5 +1,5 @@
 {
-  "name": "arkadium-ui-panelmanager",
+  "name": "arkadium-panelmanager",
   "version": "1.0.0",
   "description": "Realization of Panel Manager functionality",
   "main": "index.js",
