@@ -6,5 +6,4 @@ module.exports = {
 	ShowTransitionAlphaAndMovement: require('./src/transition/show/ShowTransitionAlphaAndMovement'),
 	ShowTransitionAlpha: require('./src/transition/show/ShowTransitionAlpha'),
 	HideTransitionMovement: require('./src/transition/hide/HideTransitionMovement')
-
 };
