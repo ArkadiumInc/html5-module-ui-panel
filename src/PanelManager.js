@@ -61,6 +61,7 @@ PanelManager.prototype.close = function(panelName) {
 
     if(panel)
     {
+        panel.signal.add(this.onPanelEvent,this);
         panel.close();
     }
 
@@ -77,7 +78,7 @@ PanelManager.prototype.resize = function(aspectRatio) {
         if(this._currentPanels.hasOwnProperty(key)) {
             var panel = this._currentPanels[key];
 
-            if (panel != null && panel.parent) {
+            if (panel != null && (panel.parent!=null || panel.parent!= undefined )) {
                 panel.resize(this._aspectRatio);
             }
         }
@@ -85,23 +86,23 @@ PanelManager.prototype.resize = function(aspectRatio) {
 
 };
 
-/*
+
 PanelManager.prototype.onPanelEvent = function(panel,eventname) {
     'use strict';
     console.log('onClosePanelEvent',eventname,panel);
-    if(eventname == 'pressClose')
+    /*if(eventname == 'pressClose')
     {
         panel.close();
     }
-    else if(eventname === 'hided')
+    else*/ if(eventname === 'hided')
     {
         console.log("REMOVED PANEL")
         this._boardContainer.removeChild(panel);
-        delete(this._currentPanels[panel.name]);
+        //delete(this._currentPanels[panel.name]);
         panel.reset();
     }
 };
-*/
+
 
 PanelManager.prototype.destroy = function() {
     'use strict';

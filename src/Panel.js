@@ -68,8 +68,8 @@ Panel.prototype.resize = function(aspectRatio) {
 
 Panel.prototype.changeAspectRatio = function() {
     'use strict';
-    this.reset();
-    this.build();
+    //this.reset();
+    //this.build();
 };
 
 Panel.prototype.createShowTransition = function() {
